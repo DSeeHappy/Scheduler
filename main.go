@@ -1,6 +1,7 @@
 package main
 
 import (
+	"Scheduler/server"
 	"log"
 	"os"
 )
@@ -15,7 +16,7 @@ func main() {
 	log.Println("Initializing database")
 
 	log.Println("Initializing HTTP sever")
-	httpServer := InitHttpServer(initConfig)
+	httpServer := server.InitHttpServer(initConfig)
 
 	httpServer.Start()
 
