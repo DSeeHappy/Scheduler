@@ -11,12 +11,12 @@ func main() {
 	log.Println("Starting Scheduler App")
 
 	log.Println("Initializing configuration")
-	initConfig := InitConfig(getConfigFileName())
+	//initConfig := InitConfig(getConfigFileName())
 
 	log.Println("Initializing database")
 
 	log.Println("Initializing HTTP sever")
-	httpServer := server.InitHttpServer(initConfig)
+	httpServer := server.InitHttpServer()
 
 	httpServer.Start()
 

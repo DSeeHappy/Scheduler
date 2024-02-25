@@ -14,9 +14,8 @@ type HttpServer struct {
 	router *chi.Mux
 }
 
-func InitHttpServer(config *viper.Viper) *HttpServer {
+func InitHttpServer() *HttpServer {
 	return &HttpServer{
-		config: config,
 		router: chi.NewRouter(),
 	}
 }
